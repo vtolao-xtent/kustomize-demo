@@ -5,7 +5,9 @@ namePrefix: kustomize-
 
 resources:
 - deployment.yml
+- deployment-mysql.yml
 - service.yml
+- service-mysql.yml
 - pvc.yml
-- mysql.deployment.yml
+- pvc-mysql.yml
 
