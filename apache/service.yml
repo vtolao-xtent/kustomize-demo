@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: apache
+  namespace: kustomize-demo
+spec:
+  selector:
+    app: apache
+  type: ClusterIP
+  ports:
+  - name: apache
+    protocol: TCP
+    port: 80
